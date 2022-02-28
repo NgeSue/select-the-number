@@ -56,13 +56,13 @@ class _MyHomePageState extends State<MyHomePage> {
   void checkAnswer(int imageNo) {
     if (ans == imageNo) {
       setState(() {
-        answerText = 'Answer is correct';
+        answerText = 'Correct';
         color = Colors.green;
-        score += 1;
+        score += 10;
       });
     } else {
       setState(() {
-        answerText = 'Answer is wrong';
+        answerText = 'Incorrect';
         color = Colors.red;
       });
     }
